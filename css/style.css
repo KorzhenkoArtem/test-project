@@ -524,7 +524,10 @@ user-select: none;
   text-align: center;
   min-height: 450px;
   background-color:#2F377C;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
+}
+.form__box-main{
+  width: 100%;
 }
 .form__box-inner{
   display: flex;
