@@ -75,12 +75,18 @@ li{
     margin:0;
     padding:0;
 }
+h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .container{
     max-width:1110px;
     margin:0 auto;
+    margin-bottom:-1px;
 }
 .header__contacts{
     display:flex;
+    margin-bottom: -1px;
 
 }
 .header__contacts li{
@@ -249,9 +255,11 @@ user-select: none;
     color:#292058;
     text-align: center;
     font-size:32px;
-    padding-top:85px;
-    padding-bottom:50px;
     font-weight: 600;
+}
+.title-pd{
+  padding-top:85px;
+  padding-bottom:50px;
 }
 .advantage__items{
     display: flex;
@@ -289,8 +297,6 @@ user-select: none;
   justify-content: space-between;
 }
 .next-webs__title{
-  padding-top:90px;
-  padding-bottom:55px;
   text-align: center;
   font-size:32px;
   font-weight:600;
@@ -358,6 +364,7 @@ user-select: none;
 }
 .bold-text{
   font-weight:bold;
+  color: rgb(41, 32, 88);
 }
 .speaker__inner{
   display: flex;
@@ -408,15 +415,13 @@ user-select: none;
   color:#BBBBBB;
 }
 .comments{
-  min-height:790px;
+  min-height:575px;
   color:#292058;
   background-color:#F7F7F7;
 }
 .comments__title{
   text-align: center;
   font-size:32px;
-  padding-top:85px;
-  padding-bottom:50px;
   font-weight: 600;
 }
 .comments__items{
@@ -455,48 +460,133 @@ user-select: none;
 .comments__text{
   font-size: 16px;
 }
-.form{
-  min-height: 650px;
-  background-image: linear-gradient( to right, rgb(40,69,133) 0%, rgb(54,44,116) 100%);
-}
 .video-container{
+  background:linear-gradient( #F7F7F7 50%, #2F377C 50% ) center center / 100%;
+  margin-bottom: -2px;
+}
+.video-container__inner{
+  background-image: url(../img/player-bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
   height: 430px;
   width: 710px;
   margin:0 auto;
-  margin-top:-215px;
-  margin-bottom:-215px;
+}
+
+.video-container__text{
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 250px;
 }
 .video-container img{
   height: 100%;
   width:100%;
 }
-.form{
-  padding-top:295px;
-  text-align: center;
+.video-container__play{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 365px;
+  height: 90px;
+  margin: auto;
+  height: 100%;
 }
 .video-container__icon{
   border-radius: 50%;
   border: 1px solid #fff;
   padding:10px;
+  width: 98px;
+  height: 101px;
+  position: relative;
+  transition: all 0.3s;
 
 }
+.video-container__icon:hover{
+  transform: scale(0.9);
+}
+.fancybox-content{
+  max-width:710px;
+  max-height:430px;
+  padding: 100px;
+}
+
 .video-container__icon .icon-play{
   color: #fff;
   font-size: 20px;
   border-radius: 50%;
   background-color: #F44F4C;
   padding: 30px;
+  position: absolute;
 }
-
+.form{
+  padding-top:95px;
+  text-align: center;
+  min-height: 450px;
+  background-color:#2F377C;
+  margin-bottom: -1px;
+}
+.form__box-inner{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
 .form__box-inner input{
   padding:20px 16px;
+  border-radius:10px;
+  border:none;
+}
+.form__title{
+  color: #fff;
+  font-size: 32px;
+  max-width: 970px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding-top:0px;
+  margin-bottom: 40px;
+}
+.form__text{
+  color: #F44F4C;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom:0px;
+  padding-bottom:40px;
+}
+.default-btn{
+  text-transform: uppercase;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(245, 79, 77);
+    color:#fff;
+    font-size: 17px;
+    padding:19px;
+    max-width: 290px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+input[type="checkbox"]:checked{
+  background-color:none;
+  color:rgb(245, 79, 77);
+}
+.checkbox-block{
+  max-width: 790px;
+  margin:0 auto;
+  padding-top:30px;
+}
+.checkbox-in{
+  font-size: 12px;
+  color: rgb(105, 121, 172);
+  padding-left: 10px;
+}
+.confidence{
+  font-size: 12px;
+  color:rgb(245, 79, 77);
+  text-decoration: underline;
 }
 
-
-
-
 .footer {
-    background-image: linear-gradient( rgb(40,69,133) 0%, rgb(58,29,143) 100%);
+    background-image: linear-gradient(to right, #2B3F86, #37248C );
   }
 .footer__inner{
     display: flex;
@@ -508,8 +598,37 @@ user-select: none;
     font-family: "Raleway-regular", sans-serif;
     line-height: 1.8;
 }
-
+@media(min-width: 1921px){
+  .speaker {
+    background-image: none;
+}
+  .speaker__contacts-social a{
+    color: rgb(41, 32, 88);
+  }
+}
+@media(max-width: 1919px){
+  .speaker {
+    background-image: none;
+}
+  .speaker__contacts-social a{
+    color: rgb(41, 32, 88);
+  }
+}
  @media(max-width: 1100px){
+   .container{
+     padding: 0px 10px;
+   }
+  .header__contacts li:first-child{
+    display: none;
+  }
+  .advantage__items{
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .advantage__item{
+    margin-bottom:50px;
+  }
   .next-webs__items{
     flex-direction: column;
     align-items: center;
@@ -517,10 +636,37 @@ user-select: none;
   .next-webs__item{
     margin-bottom:20px;
   }
-  .comments{
-    min-height: 1060px;
+  .next-webs__btn {
+    text-align: center;
+    padding: 25px 0px 40px;
+}
+  
+  .speaker__inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
   }
-
+  .speaker__text {
+    margin-right: 0px;
+}
+  
+  .comments{
+    min-height: 845px;
+  }
+  .form {
+    padding: 40px 0px;
+    
+}
+.form__box-inner {
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+}
+.default-btn{
+  max-width: 100%;
+  width: 100%;
+  margin-top:20px;
+}
   .comments__items{
     flex-direction: column;
     align-items: center;
@@ -528,8 +674,35 @@ user-select: none;
   .comments__item{
     margin-bottom:20px;
   }
-  .comments__title{
+  .title-pd{
     padding: 40px 0px;
   }
  } 
+ @media(max-width: 720px){
+  .registration__inner h1 {
+    font-size: 30px;
+}
+  .advantage__title,
+  .form__title,
+  .comments__title,
+  .speaker__title,
+  .next-webs__title {
+   font-size: 24px;
+ }
+  .video-container__inner {
+  height: 230px;
+  width: 410px;
+}
+.form__box-main label{
+  width: 100%;
   
+}
+.form__box-main input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+}
+@media (max-width: 600px){
+.advantage__items {
+    justify-content: center;
+}
