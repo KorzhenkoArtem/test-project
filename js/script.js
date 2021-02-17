@@ -39,10 +39,24 @@ function countdown(dateEnd) {
     }
   }
 
-  function display(days, hours, minutes, seconds) {}
+  function display(days, hours, minutes, seconds) { }
 }
 
+$(document).ready(function () {
+  countdown('02/21/2021 02:00:00 AM');
+});
 
+function showMore(blocksWrapper, button) {
+  $(blocksWrapper).find('.hidden').removeClass('hidden')
+  $(button).addClass('hidden')
+}
 
+$(".accordion_tab").click(function () {
+  $(".accordion_tab").not(this).each(function () {
+    $(this).parent().removeClass("active");
+    $(this).removeClass("active");
+  });
 
-countdown ('02/21/2021 02:00:00 AM');
+  $(this).parent().toggleClass("active");
+  $(this).toggleClass("active");
+});

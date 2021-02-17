@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -170,8 +170,49 @@
                     </div>
                 </div>
             </div>
+            <div class="next-webs__items hidden">
+                <div class="next-webs__item">
+                    <div class="next-webs__item-text next-webs__new-block">
+                        <div class="next-webs__item-date">
+                            <span class="icon-calendar-check-o"></span> 19 aвгуста 2020 в 20:00
+                        </div>
+                        <div class="next-webs__item-speaker">
+                            Владимир Герасичев
+                        </div>
+                    </div>
+                    <div class="next-webs__item-image">
+                        <img src="img/next-webs-bg-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="next-webs__item">
+                    <div class="next-webs__item-text next-webs__new-block">
+                        <div class="next-webs__item-date">
+                            <span class="icon-calendar-check-o"></span>19 aвгуста 2020 в 20:00
+                        </div>
+                        <div class="next-webs__item-speaker">
+                            Владимир Герасичев
+                        </div>
+                    </div>
+                    <div class="next-webs__item-image">
+                        <img src="img/next-webs-bg-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="next-webs__item">
+                    <div class="next-webs__item-text next-webs__new-block">
+                        <div class="next-webs__item-date">
+                            <span class="icon-calendar-check-o"></span>19 aвгуста 2020 в 20:00
+                        </div>
+                        <div class="next-webs__item-speaker">
+                            Владимир Герасичев
+                        </div>
+                    </div>
+                    <div class="next-webs__item-image">
+                        <img src="img/next-webs-bg-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
             <div class="next-webs__btn">
-                <a href="#">Посмотреть все мероприятия</a>
+                <a onclick="showMore('.next-webs', '.next-webs__btn')">Посмотреть все мероприятия</a>
             </div>
         </div>
     </section>
@@ -290,27 +331,686 @@
                 <form method="post">
                     <div class="form__box-inner">
                         <div class="form__box-main">
-                        <label>
-                            <input type="text" id="form-name" placeholder="Имя">
-                        </label>
-                        <label>
-                            <input type="email" id="form-email" placeholder="Email">
-                        </label>
-                        <label>
-                            <input type="tel" id="form-tel" placeholder="Номер телефона">
-                        </label>
-                        <button class="default-btn" type="submit">
-                            Получить консультацию
-                        </button>
-                    </div>
+                            <label>
+                                <input type="text" id="form-name" placeholder="Имя">
+                            </label>
+                            <label>
+                                <input type="email" id="form-email" placeholder="Email">
+                            </label>
+                            <label>
+                                <input type="tel" id="form-tel" placeholder="Номер телефона">
+                            </label>
+                            <button class="default-btn" type="submit">
+                                Получить консультацию
+                            </button>
+                        </div>
                         <div class="checkbox-block"><label>
-                            <input type="checkbox" id="form-check"><span class="checkbox-in">Нажимая на кнопку, Вы даете
-                                согласие на обработку персональных данных
-                                и соглашаетесь с </span><a href="#" class="confidence">Политикой
-                                конфиденциальности</a></label></div>
-                        
+                                <input type="checkbox" id="form-check"><span class="checkbox-in">Нажимая на кнопку, Вы
+                                    даете
+                                    согласие на обработку персональных данных
+                                    и соглашаетесь с </span><a href="#" class="confidence">Политикой
+                                    конфиденциальности</a></label></div>
+
                     </div>
                 </form>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="blog__inner">
+                <article class="article-container">
+                    <h3 class="article__title">Финансовое образование</h3>
+                    <div class="article__finance">
+                        <div class="articles">
+                            <div class="article__double-item">
+                                <div class="article__double-image">
+                                    <img src="img/article-photo-1.jpg" alt="">
+                                </div>
+                                <div class="article__double-text">
+                                    <div class="article__double-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__double-read">Читать 7 мин</p>
+                                        <p class="article__double-title">Потенциальные клиенты: нашел, привлек и
+                                            превратил в
+                                            постоянных покупателей</p>
+                                    </div>
+                                    <div class="article__double-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <img src="img/blog-user-4.png" class="pre-hide" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-2.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">60 кратких причин почему люди покупают</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-3.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">Создание и развитие личного бренда</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__double-item">
+                                <div class="article__double-image">
+                                    <img src="img/article-photo-4.jpg" alt="">
+                                </div>
+                                <div class="article__double-text">
+                                    <div class="article__double-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__double-read">Читать 7 мин</p>
+                                        <p class="article__double-title">«Думай и богатей». Десять секретов богатства из
+                                            книги
+                                            Наполеона Хилла</p>
+                                    </div>
+                                    <div class="article__double-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <img src="img/blog-user-4.png" class="pre-hide" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">Что нужно для создания мышления победителя?</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-6.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">Есть ли у вас план, мистер Фикс?</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-7.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">Внутренний запрет на богатство</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-7.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-7.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-7.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-7.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden">
+                                <div class="article__item-image">
+                                    <img src="img/article-photo-7.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__finance-btn-wrapper">
+                            <div onclick="showMore('.article__finance .articles', '.article__finance-btn-wrapper')"
+                                class="btn">Больше статей</div>
+                        </div>
+                    </div>
+                    <h3 class="article__title">Финансовое образование</h3>
+                    <div class="article__business">
+                        <div class="articles">
+                            <div class="article__double-item">
+                                <div class="article__double-image">
+                                    <img src="img/business-ability-1.jpg" alt="">
+                                </div>
+                                <div class="article__double-text">
+                                    <div class="article__double-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__double-read">Читать 7 мин</p>
+                                        <p class="article__double-title">Потенциальные клиенты: нашел, привлек и
+                                            превратил в
+                                            постоянных покупателей</p>
+                                    </div>
+                                    <div class="article__double-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <img src="img/blog-user-4.png" class="pre-hide" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-2.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">60 кратких причин почему люди покупают</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-3.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">Создание и развитие личного бренда</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-4.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">Что нужно для создания мышления победителя?</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        <p class="article__item-title">Есть ли у вас план, мистер Фикс?</p>
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden ">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden ">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden ">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden ">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden ">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="article__item hidden ">
+                                <div class="article__item-image">
+                                    <img src="img/business-ability-5.jpg" alt="">
+                                </div>
+                                <div class="article__item-text article__new-blocks">
+                                    <div class="article__item-date">
+                                        <p class="article__time">10.07.20</p>
+                                        <p class="article__read">Читать 7 мин</p>
+                                        
+                                    </div>
+                                    <div class="article__item-users">
+                                        <p class="article__answers">58 ответов</p>
+                                        <div class="icons">
+                                            <img src="img/blog-user-1.png" alt="">
+                                            <img src="img/blog-user-2.png" alt="">
+                                            <img src="img/blog-user-3.png" alt="">
+                                            <span class="article__other-users">+54</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article__business-btn-wrapper">
+                            <div onclick="showMore('.article__business .articles', '.article__business-btn-wrapper')"
+                                class="btn">Больше статей</div>
+                        </div>
+
+                    </div>
+                </article>
+                <aside class="aside">
+
+                    <div class="aside__container">
+                        <h3 class="article__title">Интересное видео</h3>
+                        <div class="aside__item aside-videos">
+                            <div class="aside__video">
+                                <img src="img/poster-1.jpg" alt="">
+                            </div>
+                            <div class="aside__video">
+                                <img src="img/poster-2.jpg" alt="">
+                            </div>
+                            <div class="aside__video">
+                                <img src="img/poster-3.jpg" alt="">
+                            </div>
+                            <div class="aside__video hidden">
+                                <img src="img/poster-3.jpg" alt="">
+                            </div>
+                            <div class="aside__video hidden">
+                                <img src="img/poster-3.jpg" alt="">
+                            </div>
+                            <div class="aside__btn">
+                                <a onclick="showMore('.aside-videos', '.aside-videos .aside__btn')">Больше видео</a>
+                            </div>
+                        </div>
+
+                        <h3 class="aside__title">Презентации</h3>
+                        <div class="aside__item">
+                            <div class="aside__presentation mg-bottom">
+                                <div class="aside__download">
+                                    <img src="img/pdf-dwnld.png" alt="">
+                                    <p class="aside__download-text">Программа FIRST от ABA Marketing Group- уникальный
+                                        комплекс финансовых услуг</p>
+                                </div>
+                                <div class="aside__download-btn">
+                                    <a href="#">Скачать презентацию</a>
+                                </div>
+                            </div>
+                            <div class="aside__presentation">
+                                <div class="aside__download">
+                                    <img src="img/pdf-dwnld.png" alt="">
+                                    <p class="aside__download-text">Карьера финансового советника</p>
+                                </div>
+                                <div class="aside__download-btn">
+                                    <a href="#">Скачать презентацию</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <h3 class="aside__title">Вопрос - ответ</h3>
+                    <div class="accordion-wrapper">
+                        <div class="accordion_question">
+                            <img src="img/question.png" alt="arrow">
+                        </div>
+                        <div class="accordion active">
+                            
+                            <div class="accordion_tab active">
+                                
+                                Как стать советником и сколько времени это занимает?
+                                <div class="accordion_arrow">
+                                    <img src="img/arrow-down.png" alt="arrow">
+                                </div>
+                                
+                            </div>
+                            <div class="accordion_content">
+                                <div class="accordion_item">
+                                    <p>Распоряжаться ценными бумагами, деньгами, предназначенными для совершения сделок
+                                        с ценными бумагами, может только юрлицо с лицензией профессионального участника
+                                        этого рынка.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion_question">
+                            <img src="img/question.png" alt="arrow">
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion_tab">
+                                Когда я начну получать первые выплаты?
+                                <div class="accordion_arrow">
+                                    <img src="img/arrow-down.png" alt="arrow">
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="accordion_item">
+                                    <p>Распоряжаться ценными бумагами, деньгами, предназначенными для совершения сделок
+                                        с ценными бумагами, может только юрлицо с лицензией профессионального участника
+                                        этого рынка.</div>
+                            </div>
+                        </div>
+                        <div class="accordion_question">
+                            <img src="img/question.png" alt="arrow">
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion_tab">
+                                Как получить кредит на выгодных условиях?
+                                <div class="accordion_arrow">
+                                    <img src="img/arrow-down.png" alt="arrow">
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="accordion_item">
+                                    <p>Распоряжаться ценными бумагами, деньгами, предназначенными для совершения сделок
+                                        с ценными бумагами, может только юрлицо с лицензией профессионального участника
+                                        этого рынка.</div>
+                            </div>
+                        </div>
+                        <div class="accordion_question">
+                            <img src="img/question.png" alt="arrow">
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion_tab">
+                                Какой порядок прав наследования вложений?
+                                <div class="accordion_arrow">
+                                    <img src="img/arrow-down.png" alt="arrow">
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="accordion_item">
+                                    <p>Распоряжаться ценными бумагами, деньгами, предназначенными для совершения сделок
+                                        с ценными бумагами, может только юрлицо с лицензией профессионального участника
+                                        этого рынка.</div>
+                            </div>
+                        </div>
+                        <div class="accordion_question">
+                            <img src="img/question.png" alt="arrow">
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion_tab">
+                                Зачем нужно доверительное управление?
+                                <div class="accordion_arrow">
+                                    <img src="img/arrow-down.png" alt="arrow">
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <div class="accordion_item">
+                                    <p>Распоряжаться ценными бумагами, деньгами, предназначенными для совершения сделок
+                                        с ценными бумагами, может только юрлицо с лицензией профессионального участника
+                                        этого рынка.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -328,6 +1028,7 @@
     <div id="modal">
         <div class="video-frame"></div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
