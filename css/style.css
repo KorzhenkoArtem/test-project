@@ -694,10 +694,10 @@ h2 {
 }
 
   .fancybox-content {
-    max-width: 100%;
-    max-height: 100%;
-    padding: 18px;
-    overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 18px;
+  overflow: hidden;
 
 }
 .fancybox-slide--html .fancybox-close-small {
