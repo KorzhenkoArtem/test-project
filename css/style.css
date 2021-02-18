@@ -93,7 +93,10 @@ li {
   margin: 0;
   padding: 0;
 }
-
+h1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 h2 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -156,15 +159,9 @@ h2 {
 }
 
 .accordion .accordion_content .accordion_item {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
-.accordion .accordion_content .accordion_item p.item_title {
-  font-weight: 600;
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #6adda2;
-}
 
 .accordion .accordion_content .accordion_item p:last-child {
   color: #9a9b9f;
@@ -290,6 +287,8 @@ h2 {
   font-size: 18px;
   font-family: "Raleway-medium", sans-serif;
   line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .registration__timer-block {
@@ -377,9 +376,8 @@ h2 {
 }
 
 .registration__for-people {
-  font-family: "Raleway-regular", sans-serif;
   font-size: 16px;
-
+  line-height: 1.5;
 }
 
 .advantage {
@@ -514,6 +512,7 @@ h2 {
 .next-webs__btn a:hover {
   background-color: #362c74;
   color: #fff;
+  cursor: pointer;
 }
 
 .speaker {
@@ -975,8 +974,9 @@ h2 {
   height: 191px;
 }
 
-
-
+#modal{
+  display: none;
+}
 
 .aside {
   max-width: 255px;
@@ -1100,7 +1100,7 @@ h2 {
   
 }
 .accordion.active {
-  height: 310px;
+  height: 100%;
 }
 .accordion_question{
   position: relative;
@@ -1111,6 +1111,8 @@ h2 {
 }
 .accordion .accordion_content .accordion_item p:last-child {
   color:#292058;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .accordion .accordion_tab .accordion_arrow img {
   height: 50%;
