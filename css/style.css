@@ -203,11 +203,26 @@ h2 {
 }
 
 .header__contacts .owner {
-  font-style: italic;
+  
   background-image: url(../img/header-owner-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.header__contacts p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.7;
+  min-height: 50px;
 }
 
 .header__contacts .facebook {
@@ -1244,7 +1259,7 @@ h2 {
     align-items: center;
 }
   .registration__inner{
-    margin-top:0px;
+    padding-top: 0px;
   }
   .countdown {
     justify-content: space-between;
@@ -1321,7 +1336,7 @@ h2 {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 529px) {
   .advantage__items {
     justify-content: center;
   }
@@ -1332,6 +1347,9 @@ h2 {
   }
   .time-section{
   padding: 0px 17px;
+}
+.registration .orange-text:before {
+  display: none;
 }
   .articles{
     width:100%;
